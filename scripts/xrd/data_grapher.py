@@ -41,13 +41,14 @@ class Data:
         ax.scatter(self.angle[self.max_index], self.max_height, c='r')
         ax.plot(self.angle, self.intensity)
         
-        plt.savefig(f'/home/matusmoro/school/exp_met_2_xrd/graphs/xrd{filename}.png')
+        plt.savefig(f'/home/matusmoro/school/exp_met_2_xrd/graphs/xrd/{filename}.png')
 
 if __name__ == "__main__":
     fast = Data(r'/home/matusmoro/school/exp_met_2_xrd/data/xrd/fast_sul.ras', 'fast')
     slow = Data(r'/home/matusmoro/school/exp_met_2_xrd/data/xrd/slow_sul.ras', 'slow')
 
+    print('Building plots')
     fast.graph('fast_test')
     slow.graph('slow_test')
-
+    print('Plots saved')
 
