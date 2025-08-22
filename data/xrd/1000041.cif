@@ -256,4 +256,3 @@ loop_
 _atom_type_symbol
 _atom_type_oxidation_number
 Na1+ 1.000
-Cl1- -1.000
